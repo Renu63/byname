@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0// EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="addrs" class="byname.addrs">
+		<property name="area_Name" value="Wagholi"></property>
+		<property name="city_Name" value="Pune"></property>
+	</bean>
+
+	<bean id="s" class="byname.student" autowire="byName">
+		<property name="s_id" value="101"></property>
+		<property name="s_name" value="rutu"></property>
+	</bean>
+</beans>
